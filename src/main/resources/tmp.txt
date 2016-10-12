@@ -1,0 +1,52 @@
+meduza
+    , div.CardChapter-body
+tass
+    , p.ng-scope
+
+
+
+    {
+      "name": "Meduza",
+      "url": "https://meduza.io/",
+      "divClass": "div.NewsInfo-title",
+      "tagnames": ["div.Body, div.CardChapter-body", "p"]
+    },
+    {
+      "name": "Interfax",
+      "url": "http://www.interfax.ru/news",
+      "divClass": "div.an",
+      "tagnames": ["div.at", "p"]
+    },
+    ,
+    {
+      "name": "IXBT",
+      "url": "http://www.ixbt.com/news/",
+      "divClass": "a.tpnl",
+      "tagnames": ["div.news_body", "p"]
+    },
+    {
+      "name": "Коммерсант.ru",
+      "url": "http://www.kommersant.ru/archive/news",
+      "divClass": "a.zag",
+      "tagnames": ["div.article_text_wrapper.js-mediator-article", "p"]
+    },
+    {
+      "name": "ТАСС",
+      "url": "http://tass.ru/",
+      "divClass": "a.b-news-item__title, a.main-slider__item.has-photo.active",
+      "tagnames": ["div.b-material-text__l.js-mediator-article, div.padding-left.news-item__content, div.b-material-text.js-mediator-article",
+        "p, p.ng-scope"]
+    }
+
+    {
+          "name": "Championat",
+          "url": "http://www.championat.com/",
+          "divClass": "div.articles-main__link, a.news__i__link, a.articles__i__link",
+          "tagnames": ["div.text-decor.article__contain.js-mediator-article"],
+          "illegalTag": "a",
+          "illegalSequence": ">>>"
+        }
+
+
+
+
