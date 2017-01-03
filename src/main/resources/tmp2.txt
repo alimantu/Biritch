@@ -1,0 +1,57 @@
+    {
+      "name": "Sports",
+      "url": "http://www.sports.ru/topnews",
+      "divClass": "a.short-text",
+      "bodyTags": ["p"],
+      "hashTags": "div.news-item__tags-line",
+      "newsTag": "sport",
+      "removeText": []
+    },
+    {
+      "name": "Meduza",
+      "url": "https://meduza.io/",
+      "divClass": "div.Page-section",
+      "bodyTags": ["div.Body, div.CardChapter-body", "p"],
+      "hashTags": "",
+      "newsTag": "mix",
+      "removeText": []
+    },
+    {
+      "name": "IXBT",
+      "url": "http://www.ixbt.com/news/",
+      "divClass": "div.news-block",
+      "bodyTags": ["div.news_body", "p"],
+      "hashTags": "ul.tagline",
+      "newsTag": "hi-tech",
+      "removeText": []
+    },
+    {
+      "name": "Коммерсант.ru",
+      "url": "http://www.kommersant.ru/archive/news",
+      "divClass": "div.b-other_docs__list",
+      "bodyTags": ["div#divLetterBranding.article_text_wrapper"],
+      "hashTags": "",
+      "newsTag": "policy",
+      "removeText": []
+    },
+
+    {
+      "name": "Interfax",
+      "url": "http://www.interfax.ru/news",
+      "divClass": "div.an",
+      "bodyTags": ["div.at", "p"],
+      "hashTags": "div.textMTags",
+      "newsTag": "policy",
+      "removeText": []
+    },
+
+    {
+      "name": "ТАСС",
+      "url": "http://tass.ru/",
+      "divClass": "a.b-news-item__title, a.main-slider__item.has-photo.active",
+      "bodyTags": ["div.b-material-text__l.js-mediator-article, div.padding-left.news-item__content, div.b-material-text.js-mediator-article",
+        "p, p.ng-scope"],
+      "hashTags": "a.b-tags__item",
+      "newsTag": "policy",
+      "removeText": ["(.)*/(.)*ТАСС(.)*/\\.\\s*"]
+    }
