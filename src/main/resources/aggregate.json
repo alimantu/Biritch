@@ -1,68 +1,17 @@
 {
-<<<<<<< HEAD
   "Name": "news.com",
   "Aggregated sites": [
-
     {
       "name": "Meduza",
       "url": "https://meduza.io/",
       "divClass": "div.Page-section",
-      "bodyTags": ["div.Body, div.CardChapter-body", "p"],
+      "bodyTags": [
+        "div.Body, div.CardChapter-body",
+        "p"
+      ],
       "hashTags": "",
       "newsTag": "mix",
       "removeText": []
-=======
-  "Name": "biritch.com",
-  "Aggregated sites": [
-    {
-      "name": "Sports",
-      "url": "http://www.sports.ru/topnews",
-      "divClass": "a.short-text",
-      "bodyTags": ["p"],
-      "newsTag": "sport",
-      "removeText": []
-    },
-    {
-      "name": "Meduza",
-      "url": "https://meduza.io/",
-      "divClass": "div.NewsInfo-title",
-      "bodyTags": ["div.Body, div.CardChapter-body", "p"],
-      "newsTag": "mix",
-      "removeText": []
-    },
-    {
-      "name": "Interfax",
-      "url": "http://www.interfax.ru/news",
-      "divClass": "div.an",
-      "bodyTags": ["div.at", "p"],
-      "newsTag": "policy",
-      "removeText": []
-    },
-    {
-      "name": "IXBT",
-      "url": "http://www.ixbt.com/news/",
-      "divClass": "a.tpnl",
-      "bodyTags": ["div.news_body", "p"],
-      "newsTag": "hi-tech",
-      "removeText": []
-    },
-    {
-      "name": "Коммерсант.ru",
-      "url": "http://www.kommersant.ru/archive/news",
-      "divClass": "a.zag",
-      "bodyTags": ["div.article_text_wrapper.js-mediator-article", "p"],
-      "newsTag": "policy",
-      "removeText": []
-    },
-    {
-      "name": "ТАСС",
-      "url": "http://tass.ru/",
-      "divClass": "a.b-news-item__title, a.main-slider__item.has-photo.active",
-      "bodyTags": ["div.b-material-text__l.js-mediator-article, div.padding-left.news-item__content, div.b-material-text.js-mediator-article",
-        "p, p.ng-scope"],
-      "newsTag": "policy",
-      "removeText": ["(.)*/(.)*ТАСС(.)*/\\.\\s*"]
->>>>>>> 9d4d51fb9495383265abf1e1fcd4752ebb8e55f3
     }
   ]
 }
