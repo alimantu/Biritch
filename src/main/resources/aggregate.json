@@ -1,0 +1,15 @@
+{
+  "Name": "news.com",
+  "Aggregated sites": [
+
+    {
+      "name": "Meduza",
+      "url": "https://meduza.io/",
+      "divClass": "div.Page-section",
+      "bodyTags": ["div.Body, div.CardChapter-body", "p"],
+      "hashTags": "",
+      "newsTag": "mix",
+      "removeText": []
+    }
+  ]
+}
