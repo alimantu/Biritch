@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     {
       "name": "Sports",
       "url": "http://www.sports.ru/topnews",
@@ -13,26 +14,51 @@
       "bodyTags": ["div.Body, div.CardChapter-body", "p"],
       "newsTag": "mix",
       "removeText": []
+=======
+meduza
+    , div.CardChapter-body
+tass
+    , p.ng-scope
+
+
+
+    {
+      "name": "Meduza",
+      "url": "https://meduza.io/",
+      "divClass": "div.NewsInfo-title",
+      "tagnames": ["div.Body, div.CardChapter-body", "p"]
+>>>>>>> 9d4d51fb9495383265abf1e1fcd4752ebb8e55f3
     },
     {
       "name": "Interfax",
       "url": "http://www.interfax.ru/news",
       "divClass": "div.an",
+<<<<<<< HEAD
       "bodyTags": ["div.at", "p"],
       "newsTag": "policy",
       "removeText": []
     },
+=======
+      "tagnames": ["div.at", "p"]
+    },
+    ,
+>>>>>>> 9d4d51fb9495383265abf1e1fcd4752ebb8e55f3
     {
       "name": "IXBT",
       "url": "http://www.ixbt.com/news/",
       "divClass": "a.tpnl",
+<<<<<<< HEAD
       "bodyTags": ["div.news_body", "p"],
       "newsTag": "hi-tech",
       "removeText": []
+=======
+      "tagnames": ["div.news_body", "p"]
+>>>>>>> 9d4d51fb9495383265abf1e1fcd4752ebb8e55f3
     },
     {
       "name": "Коммерсант.ru",
       "url": "http://www.kommersant.ru/archive/news",
+<<<<<<< HEAD
       "divClass": "div.b-other_docs__list",//"a.zag",
       "bodyTags": ["div.article_text_wrapper.js-mediator-article", "p"],
       "newsTag": "policy",
@@ -45,15 +71,37 @@
       "bodyTags": ["div#divLetterBranding.article_text_wrapper"],
       "newsTag": "policy",
       "removeText": []
+=======
+      "divClass": "a.zag",
+      "tagnames": ["div.article_text_wrapper.js-mediator-article", "p"]
+>>>>>>> 9d4d51fb9495383265abf1e1fcd4752ebb8e55f3
     },
     {
       "name": "ТАСС",
       "url": "http://tass.ru/",
       "divClass": "a.b-news-item__title, a.main-slider__item.has-photo.active",
+<<<<<<< HEAD
       "bodyTags": ["div.b-material-text__l.js-mediator-article, div.padding-left.news-item__content, div.b-material-text.js-mediator-article",
         "p, p.ng-scope"],
       "newsTag": "policy",
       "removeText": ["(.)*/(.)*ТАСС(.)*/\\.\\s*"]
     }
 
+=======
+      "tagnames": ["div.b-material-text__l.js-mediator-article, div.padding-left.news-item__content, div.b-material-text.js-mediator-article",
+        "p, p.ng-scope"]
+    }
+
+    {
+          "name": "Championat",
+          "url": "http://www.championat.com/",
+          "divClass": "div.articles-main__link, a.news__i__link, a.articles__i__link",
+          "tagnames": ["div.text-decor.article__contain.js-mediator-article"],
+          "illegalTag": "a",
+          "illegalSequence": ">>>"
+        }
+
+
+
+>>>>>>> 9d4d51fb9495383265abf1e1fcd4752ebb8e55f3
 
