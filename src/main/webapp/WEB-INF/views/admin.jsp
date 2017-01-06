@@ -1,11 +1,12 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page session="true"%>
 <html>
-<head>
+  <head>
+	<link href="../css/user-service.css" rel="stylesheet" type="text/css"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Admin Page</title>
-</head>
-<body>
+  </head>
+  <body>
 
 	<c:url value="/logout" var="logoutUrl" />
 	<form action="${logoutUrl}" method="post" id="logoutForm">
@@ -25,5 +26,5 @@
 		</h2>
 	</c:if>
 
-</body>
+  </body>
 </html>

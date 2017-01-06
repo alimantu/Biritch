@@ -1,0 +1,82 @@
+html,
+body {
+    position: relative;
+    font-family: "Arial", sans-serif;
+}
+
+html:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fon3.png");
+    opacity : 0.8;
+    z-index: -1;
+}
+
+
+.header {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.menu {
+    position: absolute;
+    text-transform: uppercase;
+    width: 400px;
+    font-size: 30px;
+    top: -0.5%;
+    left: 73%;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 23px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #ffb833;
+}
+
+.menu a:active {
+    color: #ffc966;
+    opacity: 0.4;
+}
+
+.menu ul {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    vertical-align: top;
+    padding: 0 0;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.li-first {
+    border: 3.5px solid #ffffff;
+}
+
+.li-second {
+    border-bottom: 3.5px solid #ffffff;
+    border-top: 3.5px solid #ffffff;
+    border-right: 3.5px solid #ffffff;
+}
