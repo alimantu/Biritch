@@ -1,49 +1,46 @@
 package spring.database.model;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "users")
 public class User {
 
-	private Integer id;
+	private Integer uid;
 	private String username;
 	private String password;
-	private String email="";
+	private String email;
+	private Date registrationDate;
 	private boolean enabled;
 	private String role;
-	//private Set<UserRole> userRole = new HashSet<UserRole>(1);
 
-	public User() {
-	}
+	public User() {}
 
-	public User(String username, String password, /*String email,*/
+	public User(String username, String password,
 				boolean enabled) {
 		this.username = username;
 		this.password = password;
-        /*this.email = email;*/
 		this.enabled = enabled;
 	}
 
-	public User(String username, String password, /*String email,*/
-				boolean enabled /*Set<UserRole> userRole*/, String role) {
+	public User(String username, String password,
+				boolean enabled, String role) {
 		this.username = username;
 		this.password = password;
-        /*this.email = email;*/
 		this.enabled = enabled;
 		this.role = role;
-		//this.userRole = userRole;
 	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID", unique = true, nullable = false)
+	@Column(name = "UID", unique = true, nullable = false)
 	public Integer getId() {
-		return this.id;
+		return this.uid;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setId(Integer uid) {
+		this.uid = uid;
 	}
 
 	@Column(name = "USERNAME", nullable = false)
@@ -73,6 +70,15 @@ public class User {
 		this.email = email;
 	}
 
+	@Column(name = "registration_date", nullable = false)
+	public Date getRegistrationDate() {
+		return registrationDate;
+	}
+
+	public void setRegistrationDate(Date registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+
 	@Column(name = "ENABLED", nullable = false)
 	public boolean isEnabled() {
 		return this.enabled;
@@ -81,16 +87,6 @@ public class User {
 	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
 	}
-
-	/*@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
-	public Set<UserRole> getUserRole() {
-		System.out.println("in getUserRole");
-		return this.userRole;
-	}
-
-	public void setUserRole(Set<UserRole> userRole) {
-		this.userRole = userRole;
-	}*/
 
 	@Column(name = "ROLE", nullable = false)
 	public String getRole() {
@@ -105,10 +101,11 @@ public class User {
 	@Override
 	public String toString() {
 		return "User{" +
-				"id=" + id +
+				"  uid=" + uid +
 				", username='" + username + '\'' +
 				", password='" + password + '\'' +
 				", email='" + email + '\'' +
+				", registrationDate='" + registrationDate + '\'' +
 				", enabled='" + enabled + '\'' +
 				'}';
 	}
