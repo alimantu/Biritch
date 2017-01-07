@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import spring.database.dao.UserDao;
 import spring.database.model.User;
 
+import java.util.Date;
+
 @Service("userRegistrationService")
 public class UserRegistrationService implements IUserService {
 
@@ -25,6 +27,8 @@ public class UserRegistrationService implements IUserService {
         user.setUsername(accountDto.getUsername());
         user.setPassword(accountDto.getPassword());
         user.setEmail(accountDto.getEmail());
+        Date date = new Date(System.currentTimeMillis());
+        user.setRegistrationDate(date);
         user.setEnabled(true);
         user.setRole("ROLE_USER");
         return userDao.save(user);
