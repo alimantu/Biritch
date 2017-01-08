@@ -6,39 +6,38 @@ import javax.persistence.*;
 @Table(name = "news_metadata_tags")
 public class NewsMetadataTags {
 
-    private Integer nmtid;
+    @EmbeddedId
+    private NewsMetadataTagsPK newsMetadataTagsPK;
+    @MapsId("nmid")
+    @JoinColumn(name="nmid", referencedColumnName="nmid")
+    @OneToOne
     private NewsMetadata newsMetadata;
+
+    @MapsId("tid")
+    @JoinColumn(name="tid", referencedColumnName="tid")
+    @OneToOne
     private Tags tags;
     private Float percentage;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "NMTID", unique = true, nullable = false)
-    public Integer getId() {
-        return this.nmtid;
+    public NewsMetadataTagsPK getNewsMetadataTagsPK() { return newsMetadataTagsPK; }
+
+    public void setNewsMetadataTagsPK(NewsMetadataTagsPK newsMetadataTagsPK) {
+        this.newsMetadataTagsPK = newsMetadataTagsPK;
     }
 
-    public void setId(Integer nmtid) {
-        this.nmtid = nmtid;
+    public NewsMetadata getNewsMetadata() { return newsMetadata; }
+
+    public void setNewsMetadata(NewsMetadata newsMetadata) {
+        this.newsMetadata = newsMetadata;
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "NMID")
-    public NewsMetadata getNewsMetadata() {
-        return newsMetadata;
-    }
-
-    public void setNewsMetadata(NewsMetadata newsMetadata) { this.newsMetadata = newsMetadata; }
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "TID")
     public Tags getTags() {
         return tags;
     }
 
     public void setTags(Tags tags) { this.tags = tags; }
 
-    @Column(name = "PERCENTAGE")
+    @Column(name = "percentage")
     public Float getPercentage() {
         return percentage;
     }
